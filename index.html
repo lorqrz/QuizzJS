@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Quizz</title>
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body>
+  <h1 id="main-title">Programming Quizz</h1>
+  <!-- SCORE BOARD -->
+  <div id="score-container" class="hide">
+    <h2>Congratulations!</h2>
+    <p id="display-score"><span>90</span>%</p>
+    <p>Right answer! <span id="correct-answers">0</span> de <span id="questions-qty">10</span> questions</p>
+    <button id="restart">Redo quizz!</button>
+  </div>
+  <!-- QUIZZ CONTAINER -->
+  <div id="quizz-container">
+    <p id="question">
+      <span id="question-number">1</span> - <span id="question-text">What's the unity for meters?</span>
+    </p>
+    <div id="answers-box">
+      <button><span class="btn-letter">a</span> <span class="question-answer">m</span></button>
+      <button><span class="btn-letter">b</span> <span class="question-answer">km</span></button>
+      <button><span class="btn-letter">c</span> <span class="question-answer">ms</span></button>
+      <button><span class="btn-letter">d</span> <span class="question-answer">r</span></button>
+    </div>
+  </div>
+
+  <!-- TEMPLATE RESPOSTA -->
+  <button class="answer-template hide"><span class="btn-letter">a</span> <span class="question-answer">m</span></button>
+  <script src="js/index.js" defer></script>
+</body>
+</html>
